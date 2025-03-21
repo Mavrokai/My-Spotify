@@ -1,14 +1,161 @@
 .artist-details {
-    text-align: center;
-    color: white;
-    padding: 50px;
-  }
-  
-  .artist-details img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
+text-align: left;
+color: white;
+padding: 30px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Header section with artist photo and info */
+.artist-header {
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+background: rgba(0, 0, 0, 0.3);
+border-radius: 12px;
+padding: 30px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.artist-header img {
+width: 220px;
+height: 220px;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 40px;
+border: 4px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-header img:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.artist-info {
+flex: 1;
+}
+
+.artist-info h1 {
+font-size: 36px;
+margin-bottom: 15px;
+font-weight: 700;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.artist-bio {
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 20px;
+color: rgba(255, 255, 255, 0.8);
+}
+
+/* Albums section */
+.artist-details h2 {
+font-size: 28px;
+margin: 40px 0;
+margin-left: 22%;
+position: relative;
+display: inline-block;
+padding-bottom: 10px;
+}
+
+.artist-details h2::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: linear-gradient(to right, #1db954, transparent);
+border-radius: 3px;
+}
+
+.cards-container-2 {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 25px;
+margin-left: 23%;
+}
+
+.card {
+background: rgba(0, 0, 0, 0.3);
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+text-decoration: none;
+color: white;
+display: flex;
+flex-direction: column;
+height: 100%;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 8px 8px 0 0;
+margin-bottom: 0;
+border: none;
+}
+
+.card h3 {
+padding: 15px;
+font-size: 16px;
+margin: 0;
+text-align: center;
+background: rgba(0, 0, 0, 0.6);
+flex-grow: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Status messages */
+.loading {
+font-size: 18px;
+padding: 20px;
+background: rgba(0, 0, 0, 0.3);
+border-radius: 8px;
+margin: 40px auto;
+text-align: center;
+max-width: 400px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+0% { opacity: 0.7; }
+100% { opacity: 1; }
+}
+
+.error-message {
+color: #ff5555;
+font-size: 18px;
+padding: 20px;
+background: rgba(60, 0, 0, 0.3);
+border-radius: 8px;
+margin: 40px auto;
+text-align: center;
+max-width: 600px;
+border-left: 4px solid #ff5555;
+}
+
+.no-albums {
+font-size: 18px;
+padding: 40px 20px;
+background: rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+margin: 30px auto;
+text-align: center;
+color: rgba(255, 255, 255, 0.7);
+font-style: italic;
+}
