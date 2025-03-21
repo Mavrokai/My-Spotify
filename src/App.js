@@ -10,9 +10,7 @@ import Genres from "./components/Genres";
 import DetailsGenre from "./components/DetailsGenre";
 import Artistes from "./components/Artistes";
 import Recherche from "./components/Recherche";
-
-
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");

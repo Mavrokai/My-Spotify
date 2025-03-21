@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../Artiste.css";
+import "../styles/Artiste.css";
 
 function Artiste() {
     const [allArtiste, setAllArtiste] = useState([]);

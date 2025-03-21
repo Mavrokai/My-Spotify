@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import "../DetailsAlbum.css";
+import "../styles/DetailsAlbum.css";
 
 function DetailsAlbum() {
 const { id } = useParams(); // ID de l'album depuis l'URL
