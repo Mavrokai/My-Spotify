@@ -1,0 +1,62 @@
+body {
+    flex-direction: column
+
+}
+
+.search-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-header {
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    background: #121212;
+    z-index: 100;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: #282828;
+    color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #1DB954;
+    background: #404040;
+}
+
+.no-results {
+    text-align: center;
+    padding: 50px 0;
+    color: #888;
+    font-size: 18px;
+}
+
+.card-info {
+    padding: 10px 0;
+}
+
+.artist-name {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.cards-container {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
