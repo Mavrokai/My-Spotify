@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Accueil from "./components/accueil";
 import Navbar from "./components/Navbar";
-import ArtistDetails from "./components/DetailsArtiste";
+import ArtistDetails from "./components/detailsArtiste";
 import Albums from "./components/Album";
 import Sidebar from "./components/Sidebar";
 import DetailsAlbum from "./components/DetailsAlbum";
 import Genres from "./components/Genres";
-import DetailsGenre from "./components/DetailsGenre";
+import DetailsGenre from "./components/detailsGenre";
 import Artistes from "./components/Artistes";
 
 import "./App.css";
