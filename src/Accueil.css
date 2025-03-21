@@ -55,6 +55,8 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
+  text-decoration: none !important;
+  display: block;
 }
 
 .card:hover {
@@ -74,6 +76,9 @@ h1 {
   font-weight: bold;
   color: white;
   margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Effet Play Spotify */
@@ -90,4 +95,37 @@ h1 {
 
 .card:hover::after {
   opacity: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #282828;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 40px;
+}
+
+.pagination button.active {
+  background: #1DB954;
+  font-weight: bold;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #404040;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
