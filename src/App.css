@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.page-content {
+  padding-top: 80px; /* Ajoute un espace sous la navbar */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

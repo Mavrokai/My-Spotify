@@ -1,0 +1,14 @@
+.artist-details {
+    text-align: center;
+    color: white;
+    padding: 50px;
+  }
+  
+  .artist-details img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  

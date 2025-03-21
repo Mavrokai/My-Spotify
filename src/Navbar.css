@@ -1,0 +1,37 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #181818;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  background-color: #282828;
+  color: white;
+  margin-right: 100px;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
