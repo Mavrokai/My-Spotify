@@ -5,6 +5,10 @@ import Navbar from "./components/Navbar";
 import ArtistDetails from "./components/detailsArtiste";
 import Albums from "./components/Album";
 import Sidebar from "./components/Sidebar";
+import DetailsAlbum from "./components/detailsAlbum";
+import Genres from "./components/Genres";
+import DetailsGenre from "./components/DetailsGenre";
+
 import "./App.css";
 
 function App() {
@@ -23,6 +27,9 @@ function App() {
           <Route path="/" element={<Accueil searchTerm={searchTerm} />} />
           <Route path="/detailsArtiste/:id" element={<ArtistDetails />} />
           <Route path="/Album" element={<Albums />} />
+          <Route path="/detailsAlbum/:id" element={<DetailsAlbum />} />
+          <Route path="/Genres" element={<Genres />} />
+          <Route path="/DetailsGenre/:id" element={<DetailsGenre />} />
         </Routes>
       </div>
     </Router>

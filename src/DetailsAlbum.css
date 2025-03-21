@@ -1,0 +1,112 @@
+/* Conteneur principal */
+.album-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 300px;
+  }
+  
+  /* Header de l'album */
+  .album-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .album-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .album-info h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .album-info h2 {
+    font-size: 18px;
+    opacity: 0.7;
+  }
+  
+  .album-description {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* Liste des pistes */
+  .tracklist-title {
+    margin-top: 20px;
+    font-size: 22px;
+    border-bottom: 3px solid #1db954;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Conteneur des cartes de pistes */
+  .track-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Style de chaque carte de piste */
+  .track-card {
+    background: #282828;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .track-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .track-cover {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .track-info h4 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: white;
+  }
+  
+  .track-info p {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  /* Bouton Play */
+  .play-button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .play-button.playing {
+    background-color: #e50914;
+  }
+  
