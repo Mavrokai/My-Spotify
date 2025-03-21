@@ -7,7 +7,7 @@ import Albums from "./components/Album";
 import Sidebar from "./components/Sidebar";
 import DetailsAlbum from "./components/DetailsAlbum";
 import Genres from "./components/Genres";
-import DetailsGenre from "./components/detailsGenre";
+import DetailsGenre from "./components/DetailsGenre";
 import Artistes from "./components/Artistes";
 
 import "./App.css";
