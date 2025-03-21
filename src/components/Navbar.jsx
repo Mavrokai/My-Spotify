@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Navbar.css";
 
 function Navbar({ onSearch }) {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h1>🎵 MusiFlow</h1>
+      <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+    <h1>🎵 MySpotify</h1>
+</Link>
       </div>
       <div className="search-bar">
         <input

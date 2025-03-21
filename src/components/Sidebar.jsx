@@ -13,7 +13,7 @@ function Sidebar() {
           <li><Link to="/Album">Albums</Link></li>
           <li><Link to="/Genres">Genres</Link></li>
           <li><Link to="/Artiste">Artiste</Link></li>
-          <li><Link to="/playlists">Playlists</Link></li>
+          <li><Link to="/Recherche">Recherche</Link></li>
         </ul>
       </nav>
     </div>
