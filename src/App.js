@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import DetailsAlbum from "./components/DetailsAlbum";
 import Genres from "./components/Genres";
 import DetailsGenre from "./components/DetailsGenre";
+import Artistes from "./components/Artistes";
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/detailsAlbum/:id" element={<DetailsAlbum />} />
           <Route path="/Genres" element={<Genres />} />
           <Route path="/DetailsGenre/:id" element={<DetailsGenre />} />
+          <Route path="/Artiste" element={<Artistes />} />
         </Routes>
       </div>
     </Router>

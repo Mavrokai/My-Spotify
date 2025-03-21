@@ -1,43 +1,27 @@
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-  }
-  
-  .pagination button, .pagination .dots {
-    background-color: transparent;
-    color: white;
-    border: 1px solid #555;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 14px;
-  }
-  
-  .pagination button:hover {
-    background-color: #1db954;
-    border-color: #1db954;
-  }
-  
-  .pagination button:disabled {
-    background-color: #333;
-    cursor: not-allowed;
-  }
-  
-  .pagination .active {
-    background-color: #1db954;
-    border-color: #1db954;
-    font-weight: bold;
-  }
-  
-  .pagination .dots {
-    color: #bbb;
-    border: none;
-    cursor: default;
-  }
+.pagination button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #282828;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 40px;
+}
+
+.pagination button.active {
+  background: #1DB954;
+  font-weight: bold;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #404040;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
   
   .content {
     min-width: 1000px;
