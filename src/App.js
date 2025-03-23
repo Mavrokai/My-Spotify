@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Accueil from "./components/accueil";
 import Navbar from "./components/Navbar";
-import ArtistDetails from "./components/detailsArtiste";
+import ArtistDetails from "./components/DetailsArtiste";
 import Albums from "./components/Album";
 import Sidebar from "./components/Sidebar";
 import DetailsAlbum from "./components/DetailsAlbum";
@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Navbar onSearch={handleSearch} /> {/* Passez la fonction handleSearch */}
-      <Sidebar /> 
+      <Sidebar />
       <div className="page-content">
         <Routes>
           <Route path="/" element={<Accueil searchTerm={searchTerm} />} />
